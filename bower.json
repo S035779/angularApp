@@ -1,0 +1,25 @@
+{
+  "name": "angular-js-sample-app1",
+  "description": "Angular.js View sample model #1.",
+  "main": "server.js",
+  "authors": [
+    "Mamoru Hashimoto"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular.js"
+  ],
+  "homepage": "https://marimo.co/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-messages": "^1.5.5",
+    "angular": "^1.5.6"
+  }
+}

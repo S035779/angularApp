@@ -1,0 +1,19 @@
+<html ng-app>
+  <head>
+    <script src="bower_components/angular/angular.js"></script>
+  </head>
+ 
+  <body>
+    <style>
+      .bluecolor { color : blue;}
+      .bold {font-weight: bold; }
+    </style>
+    <p ng-class="'bluecolor'">通常のCSS的な定義方法</p>
+    <p ng-class="['bluecolor','bold']">配列を使用した定義方法</p>
+    <p ng-class="{
+      bluecolor : false,
+      bold : true
+    }">
+    オブジェクト形式での定義方法</p>
+  </body>
+</html>

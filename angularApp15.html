@@ -1,0 +1,21 @@
+<html ng-app = 'mySimpleApp'>
+  <head>
+    <script src="bower_components/angular/angular.js"></script>
+  </head>
+ 
+  <script>
+    angular.module('mySimpleApp', [])
+      $scope.submit= function() {
+        console.log("mytext = " + $scope.mytext);
+      };
+    }]);
+  </script>
+ 
+  <body ng-controller="myController">
+ 
+  <form ng-submit="submit()">
+    <input type="text" ng-model="mytext" name="text" />
+    <input type="submit" value="Submit" />
+  </form>
+  </body>
+</html>

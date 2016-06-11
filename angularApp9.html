@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <script src="bower_components/angular/angular.js"></script>
+  </head>
+ 
+  <body>
+    <p>1.コレクションの表示</p>
+    <ul ng-init="users=['taro','hanako','syuta']">
+      <li ng-repeat="user in users">{{user}}</li>
+    </ul>
+ 
+    <p>2.オブジェクトの表示</p>
+    <ul ng-init="myData = { id:10 , name = 'syuta' , age = '36', lang = ['javascript','Java','Scala'] }">
+      <li ng-repeat="(key, value) in in myData">{{ key }} : {{ value }}</li>
+    </ul>
+ 
+    <p>3.ngRepeatの変数を使用</p>
+    <table ng-init=" numbers = ['one','two','three','four','five'] ">
+      <thread><tr><td>value</td><td>index</td></tr></thread>
+ 
+      <tr ng-repeat="num in numbers">
+        <td>{{num}}</td>
+        <td>{{$index}}</td>
+      </tr>
+ 
+    </table>
+ 
+  </body>
+</html>

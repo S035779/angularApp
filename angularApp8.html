@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <script src="bower_components/angular/angular.js"></script>
+  </head>
+ 
+  <body>
+    <input type="radio" ng-model="season" value="spring"> 春
+    <input type="radio" ng-model="season" value="summer"> 夏
+    <input type="radio" ng-model="season" value="autumn"> 秋
+    <input type="radio" ng-model="season" value="winter"> 冬
+    <div ng-switch='season'>
+      <div ng-switch-when='spring'>桜</div>
+      <div ng-switch-when='summer'>海</div>
+      <div ng-switch-when='autumn'>紅葉</div>
+      <div ng-switch-when='winter'>雪</div>
+      <div ng-switch-default>季節を選択してください</div>
+    </div>
+  </body>
+</html>

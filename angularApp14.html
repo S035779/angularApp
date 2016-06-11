@@ -1,0 +1,26 @@
+<html ng-app>
+  <head>
+    <script src="bower_components/angular/angular.js"></script>
+  </head>
+ 
+  <script>
+    angular.module('mySimpleApp', [])
+      .controller('myController', ['$scope', function($scope) {
+        //ngClickの定義
+        $scope.clk=  function() {
+          alert("click!");
+        };
+        //ngDblclickの定義
+        $scope.dblClk=  function() {
+          alert("double click!");
+        };
+      }]);
+  </script>
+ 
+  <body ng-controller="myController">
+    <!-- クリックイベント -->
+    <button ng-click="clk()"> クリックイベント </button>
+    <!-- ダブルクリックイベント -->
+    <button ng-dblclick="dblClk()"> ダブルクリックイベント </button>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<html ng-app = 'mySimpleApp'>
+  <head>
+    <script src="bower_components/angular/angular.js"></script>
+  </head>
+ 
+  <script>
+    angular.module('mySimpleApp', [])
+      .controller('myController', ['$scope', function($scope) {
+        $scope.url = "";
+        $scope.setLink= function() {
+          $scope.url = "http://atmarkit.co.jp";
+        };
+      }]);
+  </script>
+ 
+  <body ng-controller="myController">
+    <a ng-href="{{url}}">ng-hrefを使ったリンク</a>
+    <input type="button" ng-click="setLink()" value="set link" />
+  </body>
+</html>
